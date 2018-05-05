@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Alert" customModule="MyInstagram" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0V-Yu-47R" userLabel="Background">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="ef1-UG-V1s" appends="YES" id="3U7-cK-aG1"/>
+                    </connections>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MLT-Vy-BU2" userLabel="MessageBox">
+                    <rect key="frame" x="57.5" y="243.5" width="260" height="180"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="oX6-GN-UfU">
+                            <rect key="frame" x="0.0" y="135" width="260" height="45"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dke-Vc-1yR">
+                                    <rect key="frame" x="0.0" y="0.0" width="130" height="45"/>
+                                    <color key="backgroundColor" red="0.93725490199999995" green="0.26274509800000001" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                    <state key="normal" title="Cancel">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cancelButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="SfK-mP-1ig"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaP-xh-CUs">
+                                    <rect key="frame" x="130" y="0.0" width="130" height="45"/>
+                                    <color key="backgroundColor" red="0.61960784310000006" green="0.75294117650000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                    <state key="normal" title="BOOM">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="boomButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="BNo-Cg-rgj"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="0JX-NT-nbc"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kE3-1I-NtP">
+                            <rect key="frame" x="0.0" y="0.0" width="260" height="127"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="kE3-1I-NtP" firstAttribute="leading" secondItem="MLT-Vy-BU2" secondAttribute="leading" id="5rG-Zm-U8w"/>
+                        <constraint firstAttribute="trailing" secondItem="kE3-1I-NtP" secondAttribute="trailing" id="CH4-CY-hTS"/>
+                        <constraint firstAttribute="height" constant="180" id="EGH-se-erL"/>
+                        <constraint firstItem="oX6-GN-UfU" firstAttribute="leading" secondItem="MLT-Vy-BU2" secondAttribute="leading" id="Lag-HA-RiE"/>
+                        <constraint firstAttribute="width" constant="260" id="PRf-zs-H4d"/>
+                        <constraint firstAttribute="bottom" secondItem="oX6-GN-UfU" secondAttribute="bottom" id="Xpj-l3-iLq"/>
+                        <constraint firstAttribute="trailing" secondItem="oX6-GN-UfU" secondAttribute="trailing" id="kbV-rs-yit"/>
+                        <constraint firstItem="kE3-1I-NtP" firstAttribute="top" secondItem="MLT-Vy-BU2" secondAttribute="top" id="khg-cc-gCK"/>
+                        <constraint firstItem="oX6-GN-UfU" firstAttribute="top" secondItem="kE3-1I-NtP" secondAttribute="bottom" constant="8" id="z29-Rd-NK0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="MLT-Vy-BU2" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="26Q-NC-j5A"/>
+                <constraint firstItem="MLT-Vy-BU2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="37s-15-83O"/>
+                <constraint firstItem="r0V-Yu-47R" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Ca4-ww-aKi"/>
+                <constraint firstItem="r0V-Yu-47R" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="joZ-DF-uRO"/>
+                <constraint firstItem="r0V-Yu-47R" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pPj-5k-RVb"/>
+                <constraint firstItem="r0V-Yu-47R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wLI-3R-n8x"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="lblText" destination="kE3-1I-NtP" id="qAh-WB-Hps"/>
+                <outlet property="messageBox" destination="MLT-Vy-BU2" id="SxH-e4-JrN"/>
+            </connections>
+            <point key="canvasLocation" x="-12.5" y="60.5"/>
+        </view>
+        <tapGestureRecognizer id="ef1-UG-V1s">
+            <connections>
+                <action selector="tapGestureActivated:" destination="iN0-l3-epB" id="jTn-Kp-Aj7"/>
+                <outlet property="delegate" destination="iN0-l3-epB" id="iW9-Xu-Adw"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>
