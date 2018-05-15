@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HeaderTableCell" id="iN0-l3-epB" customClass="HeaderCell" customModule="MyNetflix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="330"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EmK-3X-qZd">
+                    <rect key="frame" x="0.0" y="0.0" width="388" height="300"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6LL-FA-Zdz">
+                    <rect key="frame" x="0.0" y="300" width="388" height="30"/>
+                    <color key="backgroundColor" red="0.076586140920000004" green="0.60769343639999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="gzs-ME-nHB"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="CSs-Qq-0mL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6LL-FA-Zdz" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="P00-5P-hqh"/>
+                <constraint firstItem="EmK-3X-qZd" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="P3g-65-qV4"/>
+                <constraint firstItem="6LL-FA-Zdz" firstAttribute="top" secondItem="EmK-3X-qZd" secondAttribute="bottom" id="eWR-6K-GKj"/>
+                <constraint firstItem="6LL-FA-Zdz" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ebP-aR-CPI"/>
+                <constraint firstItem="EmK-3X-qZd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gXF-zV-T3w"/>
+                <constraint firstItem="EmK-3X-qZd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="jcn-UV-Swy"/>
+                <constraint firstItem="6LL-FA-Zdz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nia-ac-pR2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="btnOutlet" destination="6LL-FA-Zdz" id="5Af-gr-LH4"/>
+                <outlet property="headerImage" destination="EmK-3X-qZd" id="p8S-eq-24Y"/>
+                <outlet property="imageView" destination="EmK-3X-qZd" id="yfj-jq-iBT"/>
+            </connections>
+            <point key="canvasLocation" x="-241" y="-218"/>
+        </view>
+    </objects>
+</document>

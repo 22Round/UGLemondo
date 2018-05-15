@@ -14,7 +14,6 @@ class HeaderCollectionCell:UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     
-    
     override func layoutSubviews() {
         imageView.layer.cornerRadius = imageView.frame.size.height/2
         imageView.layer.borderColor = UIColor.red.cgColor

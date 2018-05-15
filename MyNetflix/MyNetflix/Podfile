@@ -1,0 +1,10 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+use_frameworks!
+
+target 'MyNetflix' do
+project '/Users/vberidze/Desktop/learning/swift/UGLemondo/MyNetflix/MyNetflix.xcodeproj'
+pod 'Parse'
+
+end
